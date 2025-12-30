@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FrontalMinds Projects - Discover our portfolio of innovative digital solutions showcasing expertise in web development, mobile apps, and cutting-edge technology.">
+    <title>Projects | FrontalMinds</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="url(#logo-gradient)" stroke-width="2" />
+                    <path d="M16 6C16 6 10 10 10 16C10 22 16 26 16 26" stroke="url(#logo-gradient)" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M16 6C16 6 22 10 22 16C22 22 16 26 16 26" stroke="url(#logo-gradient)" stroke-width="2"
+                        stroke-linecap="round" />
+                    <ellipse cx="16" cy="16" rx="6" ry="10" stroke="url(#logo-gradient)" stroke-width="1.5" />
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#00d9ff" />
+                            <stop offset="100%" stop-color="#00ff88" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>FrontalMinds</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-label">Our Work</span>
+            <h1 class="page-title">Our <span class="gradient-text">Projects</span></h1>
+            <p class="page-subtitle">Discover our portfolio of innovative digital solutions. Each project showcases our
+                expertise in modern web development, mobile applications, and cutting-edge technology implementations.
+            </p>
+        </div>
+        <div class="hero-bg-grid"></div>
+    </section>
+
+    <!-- Filter Tags -->
+    <section class="case-filters">
+        <div class="container">
+            <div class="filter-tags">
+                <button class="filter-tag active" data-filter="all">All</button>
+                <button class="filter-tag" data-filter="web">Web Apps</button>
+                <button class="filter-tag" data-filter="mobile">Mobile</button>
+                <button class="filter-tag" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-tag" data-filter="healthcare">Healthcare</button>
+                <button class="filter-tag" data-filter="fintech">Fintech</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid-full">
+                <!-- Project 1: E-commerce Platform -->
+                <article class="project-card-large" data-category="web ecommerce" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-mockup laptop-mockup">
+                            <div class="mockup-screen">
+                                <div class="mockup-content dashboard-ecommerce">
+                                    <div class="mock-header-bar"></div>
+                                    <div class="mock-product-grid">
+                                        <div class="mock-product"></div>
+                                        <div class="mock-product"></div>
+                                        <div class="mock-product"></div>
+                                        <div class="mock-product"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">E-Commerce</span>
+                            <span class="project-tag">Web App</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">A fully-featured online shopping platform with real-time inventory,
+                            secure payments, and an intuitive admin dashboard. Built with Next.js and integrated with
+                            Stripe.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Stripe</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Healthcare Management -->
+                <article class="project-card-large" data-category="web healthcare" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-mockup laptop-mockup">
+                            <div class="mockup-screen">
+                                <div class="mockup-content dashboard-health">
+                                    <div class="mock-sidebar-health"></div>
+                                    <div class="mock-main-health">
+                                        <div class="mock-patient-list"></div>
+                                        <div class="mock-chart-health"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Healthcare</span>
+                            <span class="project-tag">Dashboard</span>
+                        </div>
+                        <h3 class="project-title">Healthcare Management System</h3>
+                        <p class="project-desc">A comprehensive patient management system with appointment scheduling,
+                            medical records, and telemedicine integration. HIPAA compliant and secure.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Logistics Tracker -->
+                <article class="project-card-large" data-category="mobile web" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-mockup phone-mockup-large">
+                            <div class="mockup-screen">
+                                <div class="mockup-content app-logistics">
+                                    <div class="mock-app-header-logistics"></div>
+                                    <div class="mock-map"></div>
+                                    <div class="mock-tracking-info"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Logistics</span>
+                            <span class="project-tag">Mobile App</span>
+                        </div>
+                        <h3 class="project-title">Logistics Tracker</h3>
+                        <p class="project-desc">Real-time shipment tracking application with GPS integration, route
+                            optimization, and delivery notifications. Available on iOS and Android.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Google Maps</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Educational Portal -->
+                <article class="project-card-large" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-mockup tablet-mockup">
+                            <div class="mockup-screen">
+                                <div class="mockup-content dashboard-edu">
+                                    <div class="mock-course-grid">
+                                        <div class="mock-course"></div>
+                                        <div class="mock-course"></div>
+                                        <div class="mock-course"></div>
+                                    </div>
+                                    <div class="mock-progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Education</span>
+                            <span class="project-tag">Web App</span>
+                        </div>
+                        <h3 class="project-title">Educational Portal</h3>
+                        <p class="project-desc">An interactive learning management system with video courses, quizzes,
+                            progress tracking, and certification. Serving over 50,000 students.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>MongoDB</span>
+                            <span>AWS</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- Project 5: Fintech App -->
+                <article class="project-card-large" data-category="mobile fintech" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-mockup phone-mockup-large">
+                            <div class="mockup-screen">
+                                <div class="mockup-content app-fintech">
+                                    <div class="mock-balance"></div>
+                                    <div class="mock-transaction-list">
+                                        <div class="mock-transaction"></div>
+                                        <div class="mock-transaction"></div>
+                                        <div class="mock-transaction"></div>
+                                    </div>
+                                    <div class="mock-nav-fintech"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Fintech</span>
+                            <span class="project-tag">Mobile App</span>
+                        </div>
+                        <h3 class="project-title">Fintech Banking App</h3>
+                        <p class="project-desc">A modern digital banking application with instant payments, budget
+                            tracking, and investment features. Secured with biometric authentication.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Plaid API</span>
+                            <span>AWS</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- Project 6: Social Media Dashboard -->
+                <article class="project-card-large" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-mockup laptop-mockup">
+                            <div class="mockup-screen">
+                                <div class="mockup-content dashboard-social">
+                                    <div class="mock-analytics-cards">
+                                        <div class="mock-analytics-card"></div>
+                                        <div class="mock-analytics-card"></div>
+                                        <div class="mock-analytics-card"></div>
+                                    </div>
+                                    <div class="mock-chart-social"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Social Media</span>
+                            <span class="project-tag">Dashboard</span>
+                        </div>
+                        <h3 class="project-title">Social Media Dashboard</h3>
+                        <p class="project-desc">A unified dashboard for managing multiple social media accounts with
+                            analytics, scheduling, and AI-powered content suggestions.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's discuss how we can bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+                    <a href="services.html" class="btn btn-outline btn-lg">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" stroke="url(#logo-gradient-2)" stroke-width="2" />
+                            <path d="M16 6C16 6 10 10 10 16C10 22 16 26 16 26" stroke="url(#logo-gradient-2)"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M16 6C16 6 22 10 22 16C22 22 16 26 16 26" stroke="url(#logo-gradient-2)"
+                                stroke-width="2" stroke-linecap="round" />
+                            <ellipse cx="16" cy="16" rx="6" ry="10" stroke="url(#logo-gradient-2)" stroke-width="1.5" />
+                            <defs>
+                                <linearGradient id="logo-gradient-2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#00d9ff" />
+                                    <stop offset="100%" stop-color="#00ff88" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>FrontalMinds</span>
+                    </a>
+                    <p class="footer-tagline">© 2025 FrontalMinds. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">Cybersecurity</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Subscribe to our newsletter</h4>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">Get updates on our latest projects and insights.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FrontalMinds Services - Website Development, Mobile App Development, and Cybersecurity Services.">
+    <title>Services | FrontalMinds</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Three.js for 3D animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="url(#logo-gradient)" stroke-width="2" />
+                    <path d="M16 6C16 6 10 10 10 16C10 22 16 26 16 26" stroke="url(#logo-gradient)" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M16 6C16 6 22 10 22 16C22 22 16 26 16 26" stroke="url(#logo-gradient)" stroke-width="2"
+                        stroke-linecap="round" />
+                    <ellipse cx="16" cy="16" rx="6" ry="10" stroke="url(#logo-gradient)" stroke-width="1.5" />
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#00d9ff" />
+                            <stop offset="100%" stop-color="#00ff88" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>FrontalMinds</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-label">Our Services</span>
+            <h1 class="page-title">Our Core <span class="gradient-text">Services</span></h1>
+            <p class="page-subtitle">We deliver cutting-edge digital solutions tailored to your business needs. Explore
+                our expertise in development and security.</p>
+        </div>
+        <div class="hero-bg-grid"></div>
+    </section>
+
+    <!-- Services Detail Section -->
+    <section class="services-detail">
+        <div class="container">
+            <!-- Website Development -->
+            <div class="service-block" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon-large">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="64" height="48" rx="4" stroke="url(#svc-grad-1)"
+                                stroke-width="2" />
+                            <path d="M8 52h64" stroke="url(#svc-grad-1)" stroke-width="2" />
+                            <path d="M30 68h20" stroke="url(#svc-grad-1)" stroke-width="3" stroke-linecap="round" />
+                            <path d="M40 60v8" stroke="url(#svc-grad-1)" stroke-width="2" />
+                            <path d="M24 30l8 8-8 8" stroke="url(#svc-grad-1)" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M40 46h16" stroke="url(#svc-grad-1)" stroke-width="2.5" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="svc-grad-1" x1="8" y1="12" x2="72" y2="68">
+                                    <stop offset="0%" stop-color="#00d9ff" />
+                                    <stop offset="100%" stop-color="#00ff88" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="service-title">Website Development</h2>
+                    <p class="service-desc">Modern, responsive websites built with cutting-edge technologies. From
+                        simple landing pages to complex web applications, we create digital experiences that engage and
+                        convert.</p>
+                    <ul class="service-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Responsive design for all devices
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            SEO optimized architecture
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Fast loading speeds
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Content Management Systems
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            E-commerce solutions
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-visual">
+                    <canvas id="web-dev-canvas" class="service-canvas"></canvas>
+                </div>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div class="service-block reverse" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon-large">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="6" width="40" height="68" rx="8" stroke="url(#svc-grad-2)"
+                                stroke-width="2" />
+                            <circle cx="40" cy="64" r="4" fill="url(#svc-grad-2)" />
+                            <path d="M32 14h16" stroke="url(#svc-grad-2)" stroke-width="3" stroke-linecap="round" />
+                            <rect x="26" y="22" width="28" height="32" rx="2" stroke="url(#svc-grad-2)"
+                                stroke-width="1.5" />
+                            <path d="M34 30h12M34 36h8M34 42h10" stroke="url(#svc-grad-2)" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="svc-grad-2" x1="20" y1="6" x2="60" y2="74">
+                                    <stop offset="0%" stop-color="#00d9ff" />
+                                    <stop offset="100%" stop-color="#00ff88" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="service-title">Mobile App Development</h2>
+                    <p class="service-desc">Native and cross-platform mobile applications that deliver exceptional user
+                        experiences. We build apps that your customers will love to use every day.</p>
+                    <ul class="service-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            iOS and Android development
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            React Native & Flutter expertise
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            App Store optimization
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Push notifications & analytics
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Offline-first architecture
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-visual">
+                    <canvas id="mobile-dev-canvas" class="service-canvas"></canvas>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Services -->
+            <div class="service-block" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon-large">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 6L68 18v24c0 14-28 28-28 28S12 56 12 42V18L40 6z" stroke="url(#svc-grad-3)"
+                                stroke-width="2" />
+                            <path d="M30 40l8 8 16-16" stroke="url(#svc-grad-3)" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="40" cy="40" r="16" stroke="url(#svc-grad-3)" stroke-width="1.5"
+                                stroke-dasharray="4 4" />
+                            <defs>
+                                <linearGradient id="svc-grad-3" x1="12" y1="6" x2="68" y2="70">
+                                    <stop offset="0%" stop-color="#00d9ff" />
+                                    <stop offset="100%" stop-color="#00ff88" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="service-title">Cybersecurity Services</h2>
+                    <p class="service-desc">Comprehensive security solutions to protect your digital assets. From
+                        penetration testing to security audits, we ensure your systems are fortified against threats.
+                    </p>
+                    <ul class="service-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Penetration testing
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Security audits & assessments
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Vulnerability management
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Compliance advisory
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            24/7 threat monitoring
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-visual">
+                    <canvas id="security-canvas" class="service-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">How We Work</h2>
+            <p class="section-subtitle">Our streamlined process ensures quality and efficiency from start to finish.</p>
+            <div class="process-grid">
+                <div class="process-step" data-aos="fade-up">
+                    <div class="step-number">01</div>
+                    <h3>Discovery & Strategy</h3>
+                    <p>We start by understanding your goals, audience, and project requirements to build a comprehensive
+                        strategy for success.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <h3>Design & Development</h3>
+                    <p>Our team designs and develops your solution, focusing on user experience, performance, and
+                        scalability while keeping you updated.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <h3>Launch & Support</h3>
+                    <p>After rigorous testing, we deploy your project. We also offer ongoing support and maintenance to
+                        ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Answers to common questions about our services.</p>
+            <div class="faq-grid">
+                <div class="faq-category" data-aos="fade-up">
+                    <h3 class="faq-category-title">Website Development</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long does it take to build a website?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Timeline varies based on complexity. A simple website takes 2-4 weeks, while complex web
+                                applications may take 2-3 months. We'll provide a detailed timeline during our initial
+                                consultation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Will my website be mobile-friendly?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! All our websites are built with responsive design, ensuring they look and
+                                function perfectly on all devices - desktops, tablets, and smartphones.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide website maintenance?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We offer ongoing maintenance packages including security updates, content updates,
+                                performance optimization, and technical support.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="faq-category-title">Mobile App Development</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you develop for both iOS and Android?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We develop native apps for both platforms as well as cross-platform solutions using
+                                React Native and Flutter, depending on your needs and budget.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can you help me publish my app to the app stores?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We handle the entire submission process for both Apple App Store and Google
+                                Play Store, including app optimization and compliance requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="faq-category-title">Cybersecurity Services</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is a penetration test?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A penetration test simulates real-world cyber attacks on your systems to identify
+                                vulnerabilities before malicious actors can exploit them. We provide detailed reports
+                                with remediation steps.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often should we conduct a security audit?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We recommend conducting security audits at least annually, or after any major system
+                                changes. For high-risk industries, quarterly assessments are advisable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can help bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch</a>
+                    <a href="projects.html" class="btn btn-outline btn-lg">View Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" stroke="url(#logo-gradient-2)" stroke-width="2" />
+                            <path d="M16 6C16 6 10 10 10 16C10 22 16 26 16 26" stroke="url(#logo-gradient-2)"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M16 6C16 6 22 10 22 16C22 22 16 26 16 26" stroke="url(#logo-gradient-2)"
+                                stroke-width="2" stroke-linecap="round" />
+                            <ellipse cx="16" cy="16" rx="6" ry="10" stroke="url(#logo-gradient-2)" stroke-width="1.5" />
+                            <defs>
+                                <linearGradient id="logo-gradient-2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#00d9ff" />
+                                    <stop offset="100%" stop-color="#00ff88" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>FrontalMinds</span>
+                    </a>
+                    <p class="footer-tagline">© 2025 FrontalMinds. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">Cybersecurity</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Subscribe to our newsletter</h4>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">Get updates on our latest projects and insights.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/services-animations.js"></script>
+</body>
+
+</html>
